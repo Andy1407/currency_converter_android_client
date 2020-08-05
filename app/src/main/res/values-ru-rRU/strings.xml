@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Конвертер валют</string>
+    <string name="rub">Rub</string>
+    <string name="usd">Usd</string>
+    <string name="from">Валюта 1:</string>
+    <string name="to">Валюта 2:</string>
+    <string name="one">1</string>
+    <string name="equally">=</string>
+    <string name="send">Отправить</string>
+    <string name="zero">0</string>
+    <string name="loading">загрузка...</string>
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Currencies converter</string>
+    <string name="rub">Rub</string>
+    <string name="usd">Usd</string>
+    <string name="from">Currency 1:</string>
+    <string name="to">Currency 2:</string>
+    <string name="one">1</string>
+    <string name="equally">=</string>
+    <string name="send">Send</string>
+    <string name="zero">0</string>
+    <string name="loading">loading...</string>
+</resources>
