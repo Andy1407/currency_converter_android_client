@@ -1,1 +1,1 @@
-![alt text](screenshots/Loading.jpeg)
+![alt text](Screenshots/Loading.jpeg)
