@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Конвертер валют</string>
     <string name="rub">Rub</string>
     <string name="usd">Usd</string>
@@ -9,5 +9,8 @@
     <string name="equally">=</string>
     <string name="send">Отправить</string>
     <string name="zero">0</string>
-    <string name="loading">загрузка...</string>
+    <string name="endpoint">конечная точка</string>
+    <string name="loading" tools:ignore="TypographyEllipsis">загрузка...</string>
+    <string name="back">назад</string>
+    <string name="default_endpoint">http://localhost:8000</string>
 </resources>

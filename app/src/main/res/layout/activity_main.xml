@@ -9,108 +9,112 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/convert_value"
+        android:id="@+id/current_endpoint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="196dp"
-        android:text="@string/zero"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/equally2"
-        app:layout_constraintTop_toBottomOf="@+id/to_currency" />
-
-    <EditText
-        android:id="@+id/from_currency"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/rub"
+        android:layout_marginTop="36dp"
+        android:text="@string/default_endpoint"
+        android:textColor="#248b82"
+        android:textSize="23sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.159"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/from_label"
-        tools:ignore="LabelFor" />
-
-    <EditText
-        android:id="@+id/to_currency"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/usd"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.159"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/to_label"
-        tools:ignore="LabelFor" />
-
-    <TextView
-        android:id="@+id/from_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="@string/from"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.087"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/to_label"
+        android:id="@+id/currency1_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/from"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/current_endpoint" />
+
+    <EditText
+        android:id="@+id/currency1"
+        android:layout_width="250dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:background="@drawable/shape_input"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingStart="7dp"
+        android:text="@string/rub"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currency1_label"
+        tools:ignore="LabelFor,RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/currency2_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="16dp"
         android:text="@string/to"
         android:textColor="#000000"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.082"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/from_currency" />
+        app:layout_constraintTop_toBottomOf="@+id/currency1" />
+
+    <EditText
+        android:id="@+id/currency2"
+        android:layout_width="250dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:background="@drawable/shape_input"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingStart="7dp"
+        android:text="@string/usd"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currency2_label"
+        tools:ignore="LabelFor,RtlSymmetry" />
 
     <TextView
         android:id="@+id/one"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="34dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="92dp"
+        android:gravity="center"
         android:text="@string/one"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/to_currency" />
+        app:layout_constraintTop_toBottomOf="@+id/currency2" />
 
     <TextView
-        android:id="@+id/usdCource"
+        android:id="@+id/currency1_Cource"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="34dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="92dp"
+        android:gravity="center"
         android:text="@string/usd"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/one"
-        app:layout_constraintTop_toBottomOf="@+id/to_currency" />
+        app:layout_constraintTop_toBottomOf="@+id/currency2" />
 
     <TextView
         android:id="@+id/equally"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="34dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="92dp"
+        android:gravity="center"
         android:text="@string/equally"
         android:textColor="#000000"
         android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/usdCource"
-        app:layout_constraintTop_toBottomOf="@+id/to_currency" />
+        app:layout_constraintStart_toEndOf="@+id/currency1_Cource"
+        app:layout_constraintTop_toBottomOf="@+id/currency2" />
 
     <ImageButton
         android:id="@+id/arrowCource"
@@ -120,92 +124,77 @@
         android:layout_marginTop="68dp"
         android:background="#fff"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/to_currency"
+        app:layout_constraintTop_toBottomOf="@+id/currency2"
         app:srcCompat="@drawable/ic_outline_swap_horiz_24" />
 
     <EditText
         android:id="@+id/course"
         android:layout_width="130dp"
-        android:layout_height="43dp"
+        android:layout_height="34dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/shape_input"
         android:ems="10"
-        android:hint="@string/zero"
+        android:hint="@string/one"
         android:inputType="numberDecimal"
+        android:paddingStart="7dp"
         app:layout_constraintStart_toEndOf="@+id/equally"
-        app:layout_constraintTop_toBottomOf="@+id/to_currency" />
+        app:layout_constraintTop_toBottomOf="@+id/currency2"
+        tools:ignore="RtlSymmetry" />
 
     <TextView
-        android:id="@+id/rubCource"
+        android:id="@+id/currency2_Cource"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="34dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="92dp"
+        android:gravity="center"
         android:text="@string/rub"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/course"
-        app:layout_constraintTop_toBottomOf="@+id/to_currency" />
+        app:layout_constraintTop_toBottomOf="@+id/currency2" />
 
     <EditText
         android:id="@+id/input_value"
         android:layout_width="130dp"
-        android:layout_height="43dp"
+        android:layout_height="34dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/shape_input"
         android:ems="10"
         android:hint="@string/zero"
         android:inputType="numberDecimal"
+        android:paddingStart="7dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/to_currency"
-        tools:ignore="LabelFor" />
+        app:layout_constraintTop_toBottomOf="@+id/currency2"
+        tools:ignore="LabelFor,RtlSymmetry" />
 
     <TextView
-        android:id="@+id/usd_convert"
+        android:id="@+id/currency1_convert"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="34dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="196dp"
+        android:gravity="center"
         android:text="@string/usd"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/input_value"
-        app:layout_constraintTop_toBottomOf="@+id/to_currency" />
+        app:layout_constraintTop_toBottomOf="@+id/currency2" />
 
     <TextView
         android:id="@+id/equally2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="34dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="196dp"
+        android:gravity="center"
         android:text="@string/equally"
         android:textColor="#000000"
         android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/usd_convert"
-        app:layout_constraintTop_toBottomOf="@+id/to_currency" />
-
-    <Button
-        android:id="@+id/send_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="316dp"
-        android:text="@string/send"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/to_currency" />
-
-    <TextView
-        android:id="@+id/rub_converter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="196dp"
-        android:text="@string/rub"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/convert_value"
-        app:layout_constraintTop_toBottomOf="@+id/to_currency" />
+        app:layout_constraintStart_toEndOf="@+id/currency1_convert"
+        app:layout_constraintTop_toBottomOf="@+id/currency2" />
 
     <ImageButton
         android:id="@+id/arrowConverter"
@@ -215,9 +204,47 @@
         android:background="#fff"
         app:layout_constraintBottom_toTopOf="@+id/equally2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/to_currency"
+        app:layout_constraintTop_toBottomOf="@+id/currency2"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ic_outline_swap_horiz_24" />
+
+    <TextView
+        android:id="@+id/convert_value"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="196dp"
+        android:text="@string/zero"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@+id/equally2"
+        app:layout_constraintTop_toBottomOf="@+id/currency2" />
+
+    <TextView
+        android:id="@+id/currency2_convert"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="196dp"
+        android:gravity="center"
+        android:text="@string/rub"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/convert_value"
+        app:layout_constraintTop_toBottomOf="@+id/currency2" />
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="272dp"
+        android:background="@drawable/shape_button"
+        android:text="@string/send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currency2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

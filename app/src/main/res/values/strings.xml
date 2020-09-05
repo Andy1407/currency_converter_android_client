@@ -1,4 +1,5 @@
-<resources>
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Currencies converter</string>
     <string name="rub">Rub</string>
     <string name="usd">Usd</string>
@@ -8,5 +9,8 @@
     <string name="equally">=</string>
     <string name="send">Send</string>
     <string name="zero">0</string>
-    <string name="loading">loading...</string>
+    <string name="endpoint">endpoint</string>
+    <string name="loading" tools:ignore="TypographyEllipsis">loading...</string>
+    <string name="back">back</string>
+    <string name="default_endpoint">http://localhost:8000</string>
 </resources>
